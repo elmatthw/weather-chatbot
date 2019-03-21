@@ -13,3 +13,12 @@
 ## story 04
 * inform
     - action_weather
+    
+## story 05
+* greet
+    - utter_greet
+* inform
+    - utter_ask_location
+* inform{"location":"Vilnius"}
+    - slot{"location": "Vilnius"}
+    - action_weather

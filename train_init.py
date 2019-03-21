@@ -12,7 +12,8 @@ if __name__ == '__main__':
     training_data_file = './data/stories.md'
     model_path = './models/dialogue'
 
-    agent = Agent('weather_domain.yml', policies=[MemoizationPolicy(max_history=2), KerasPolicy()])
+    agent = Agent('weather_domain.yml', policies=[MemoizationPolicy(max_history=2), KerasPolicy(max_history=3, epochs=500,
+                                                                                                batch_size=10)])
     data = agent.load_data(training_data_file)
     agent.train(data)
     agent.persist(model_path)
