@@ -1,30 +1,25 @@
+%YAML 1.1
+---
+actions:
+- utter_goodbye
+- utter_ask_location
+- utter_greet
+- action_weather
+entities:
+- location
+- GPE
+intents:
+- inform
+- goodbye
+- greet
 slots:
   location:
     type: text
-
-
-intents:
-  - greet
-  - goodbye
-  - inform
-
-
-entities:
-  - location
-
-
 templates:
-  utter_greet:
-    - 'Hello! How can I help?'
-  utter_goodbye:
-    - 'Talk to you later.'
-    - 'Bye!'
   utter_ask_location:
-    - 'In what location?'
-
-
-actions:
-  - utter_greet
-  - utter_goodbye
-  - utter_ask_location
-  - action_weather
+  - text: In what location?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye!
+  utter_greet:
+  - text: Hello! How can I help?

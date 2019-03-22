@@ -22,3 +22,12 @@
 * inform{"location":"Vilnius"}
     - slot{"location": "Vilnius"}
     - action_weather
+## Generated Story 2728064048116389211
+* greet
+    - utter_greet
+* inform{"location": "minsk", "GPE": "Minsk"}
+    - slot{"location": "minsk"}
+    - action_weather
+* goodbye
+    - utter_goodbye
+

@@ -13,9 +13,9 @@ def train_nlu(data, configs, model_dir):
 
 def run_nlu():
     interpreter = Interpreter.load('./models/nlu/default/weathernlu')
-    print(interpreter.parse(u"I am planning my holiday to Lithuania. I wonder what is the weather out there."))
+    print(interpreter.parse(u"I am planning my holiday to London. I wonder what is the weather out there."))
 
 
 if __name__ == '__main__':
-    train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')
+    train_nlu('./data/data.json', 'config.yml', './models/nlu')
     run_nlu()

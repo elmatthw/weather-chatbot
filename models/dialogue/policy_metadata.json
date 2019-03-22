@@ -5,22 +5,22 @@
         "location"
       ]
     },
-    "action_weather": {
+    "utter_goodbye": {
       "slots": []
     },
-    "utter_greet": {
+    "action_weather": {
       "slots": []
     },
     "utter_ask_location": {
       "slots": []
     },
-    "utter_goodbye": {
+    "utter_greet": {
       "slots": []
     }
   },
   "python": "3.6.0",
   "max_histories": [
-    2,
+    5,
     3
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
@@ -28,7 +28,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190321-094112",
+  "trained_at": "20190322-164826",
   "rasa_core": "0.13.4",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"
