@@ -23,7 +23,7 @@
           }
         ]
       },
-	  {
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
@@ -236,6 +236,59 @@
             "entity": "location"
           }
         ]
+      },
+      {
+        "text": "What's the weather in Minsk?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "Minsk",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Hello. Tell me the weather in Moscow",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 30,
+            "end": 36,
+            "value": "Moscow",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "weather in Warsaw",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Warsaw",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "What about Riga?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Riga",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Bye!",
+        "intent": "goodbye",
+        "entities": []
       }
     ]
   }

@@ -18,7 +18,7 @@ def run_weather_online(interpreter,
                        training_data_file="data/stories.md"):
     action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
     agent = Agent(domain_file, policies=[MemoizationPolicy(max_history=2),
-                                         KerasPolicy(max_history=3, epochs=200, batch_size=50)], interpreter=interpreter, action_endpoint=action_endpoint)
+                                         KerasPolicy(max_history=3, epochs=3, batch_size=50)], interpreter=interpreter, action_endpoint=action_endpoint)
     data = agent.load_data(training_data_file)
     agent.train(data)
     interactive.run_interactive_learning(agent, training_data_file, skip_visualization=True)

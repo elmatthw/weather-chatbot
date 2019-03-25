@@ -5,10 +5,12 @@
         "location"
       ]
     },
-    "utter_goodbye": {
-      "slots": []
-    },
     "action_weather": {
+      "slots": [
+        "location"
+      ]
+    },
+    "utter_goodbye": {
       "slots": []
     },
     "utter_ask_location": {
@@ -28,7 +30,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190322-164826",
+  "trained_at": "20190325-122220",
   "rasa_core": "0.13.4",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.2"

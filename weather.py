@@ -39,5 +39,3 @@ class Weather:
 
 
 
-# result = 'Temperature in London is {:.1f} degrees Celsius'.format(data['main']['temp'] - 273)
-

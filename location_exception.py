@@ -1,0 +1,2 @@
+class NoLocationRecognized(Exception):
+    pass

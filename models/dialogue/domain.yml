@@ -1,20 +1,20 @@
 %YAML 1.1
 ---
 actions:
-- utter_goodbye
 - utter_ask_location
-- utter_greet
 - action_weather
+- utter_greet
+- utter_goodbye
 config:
   store_entities_as_slots: true
 entities:
-- location
 - GPE
+- location
 forms: []
 intents:
-- inform:
-    use_entities: true
 - goodbye:
+    use_entities: true
+- inform:
     use_entities: true
 - greet:
     use_entities: true

@@ -31,3 +31,11 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story 4650793181582508968
+* inform{"location": "london", "GPE": "London"}
+    - slot{"location": "london"}
+    - action_weather
+    - slot{"location": "london"}
+* goodbye
+    - utter_goodbye
+
