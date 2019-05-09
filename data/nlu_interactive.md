@@ -1,5 +1,8 @@
 ## intent:goodbye
-- Thanks. Goodbye.
+- bye
+
+## intent:greet
+- Hello
 
 ## intent:inform
-- I am planning my holiday to [London](location:london)[London](GPE). I wonder what is the weather out there.
+- Tell me the weather in [Tokio](location:tokio)[Tokio](ORG)

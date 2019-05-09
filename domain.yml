@@ -1,0 +1,26 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- action_weather
+- utter_ask_location
+entities:
+- GPE
+- location
+- ORG
+intents:
+- greet
+- goodbye
+- inform
+slots:
+  location:
+    type: text
+templates:
+  utter_ask_location:
+  - text: In what location?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye!
+  utter_greet:
+  - text: Hello! How can I help?

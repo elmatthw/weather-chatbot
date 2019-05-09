@@ -39,3 +39,14 @@
 * goodbye
     - utter_goodbye
 
+## Generated Story -131467750487057889
+* greet
+    - utter_greet
+* inform{"location": "tokio", "ORG": "Tokio"}
+    - slot{"location": "tokio"}
+    - action_weather
+    - slot{"location": "tokio"}
+    - action_revert_fallback_events
+* goodbye
+    - utter_goodbye
+

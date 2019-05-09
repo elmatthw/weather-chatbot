@@ -11,6 +11,12 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level='INFO')
 
 
+class ActionWeatherOnFiveDays(Action):
+    def name(self):
+        return 'action_weather_five'
+
+
+
 class ActionWeather(Action):
     def name(self):
         return 'action_weather'

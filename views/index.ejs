@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+<form autocomplete="off" name="myform">
+    <input autocomplete="off" type="text" name="user_query">
+    <input type="submit" id="submit_user_query">
+</form>
+
+<script>
+    document.getElementById("submit_user_query").addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        let form = document.forms["myform"];
+        let user_query = form.elements["user_query"].value;
+        let request = new XMLHttpRequest();
+        request.open("POST", "/post", true);
+        request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+        request.addEventListener("load", function () {
+             let received = JSON.parse(request.response);
+             var userMessage = $("<p></p>").text(received.user_query);
+             var botMessage = $("<p></p>").text(received.bot_response);;
+             $("form").append(userMessage, botMessage);
+             console.log(received.user_query, "-", received.bot_response);   // смотрим ответ сервера
+        });
+        request.send(JSON.stringify({query:user_query}));
+    })
+
+</script>
+</body>
+</html>
