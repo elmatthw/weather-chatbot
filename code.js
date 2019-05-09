@@ -3,18 +3,12 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-var jsdom = require('jsdom');
-const { JSDOM } = jsdom;
-const { window } = new JSDOM();
-const { document } = (new JSDOM('')).window;
-global.document = document;
 
-var $ = jQuery = require('jquery')(window);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/static'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 

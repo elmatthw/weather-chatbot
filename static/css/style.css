@@ -1,0 +1,42 @@
+.w3-input{
+    padding:10px;
+    display:block;
+    border:1px solid #ccc;
+    width: 98%;
+    position: relative;
+    left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.chatBox{
+	position: relative;
+	margin: 1%;
+	padding: 10px 10px;
+	border: 1px solid #ececec;
+	border-radius: 1px;
+	height: 80vh;
+	/*min-height: 50vh;*/
+    overflow: auto;
+
+}
+
+ .response{
+ 	border: 1px solid #0066cb;
+ 	background: #007AFF;
+ 	padding:10px;
+     margin-top: 55px;
+ 	width: 40%;
+ 	color: #fff;
+ 	border-radius:  20px;
+ }
+ .request{
+ 	background: #00CC47;
+ 	border: 1px solid #00be46;
+     padding: 10px;
+     margin: 7px;
+    width: 40%;
+ 	color: #fff;
+ 	border-radius: 20px;
+ 	float: right;
+ }
